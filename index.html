@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stilo.css">
+  <title>Página Tributo</title>
+</head>
+
+<body>
+  <div class="titulo">
+    <h1 id="title">freeCodeCamp Formulario</h1>
+    <p id="description"><em>Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma</em></p>
+  </div>
+
+  <div class="formulario">
+    <form id="survey-form">
+      <label for="inputNombre" id="name-label">Nombre</label>
+      <input type="text" name="inputNombre" placeholder="Ingrese su nombre" id="name">
+      <label for="inputMail" id="email-label">Correo Electrónico</label>
+      <input type="text" name="inputMail" placeholder="Ingrese su correo electrónico" id="email">
+      <label for="inputEdad" id="number-label">Edad (opcional)</label>
+      <input type="text" name="inputEdad" placeholder="Edad" id="number">
+      <label for="selectUno" class="etiqueta">¿Qué opción describe mejor tu situación actual?</label>
+      <div class="seleccion">
+        <select id="dropdown" name="situaciona">
+          <option value="" disabled selected>Seleccione una opción</option>
+          <option value="Estudiante">Estudiante</option>
+          <option value="TrabajoC">Trabajador</option>
+          <option value="Practicante">Practicante</option>
+          <option value="Prefiero">Prefiero no decirlo</option>
+          <option value="Otra">Otra</option>
+        </select>
+      </div>
+      <div class="caja">
+        <label for="recomendacion" class="etiqueta">¿Recomendaría freeCodeCamp a un amigo?</label>
+        <input type="radio" name="valor" value="definitivamente" class="input-radio">
+        <label for="valor" class="etiqueta">Definitivamente</label>
+        <input type="radio" name="valor" value="talvez" class="input-radio">
+        <label for="valor" class="etiqueta">Tal vez</label>
+        <input type="radio" name="valor" value="noseguro" class="input-radio">
+        <label for="valor" class="etiqueta">No estoy seguro</label>
+      </div>
+      <label for="selectDos" class="etiqueta">¿Cuál es tu atributo favorito de freeCodeCamp</label>
+      <div class="seleccion">
+        <select id="dropdown" name="situacionb">
+          <option value="" disabled selected>Seleccione una opción</option>
+          <option value="desafio">Desafíos</option>
+          <option value="proyecto">Proyectos</option>
+          <option value="comunidad">Comunidad</option>
+          <option value="codigo">Código abierto</option>
+        </select>
+      </div>
+      <div class="caja">
+        <label for="mejora" class="etiqueta">¿Qué le gustaría que mejorara?</label>
+        <input type="checkbox" name="val1" value="feproyectos" class="input-checkbox">
+        <label for="val1" class="etiqueta">Proyectos Front-end</label>
+        <input type="checkbox" name="val2" value="beproyectos" class="input-checkbox">
+        <label for="val2" class="etiqueta">Proyectos Back-end</label>
+        <input type="checkbox" name="val3" value="visualizacion" class="input-checkbox">
+        <label for="val3" class="etiqueta">Visualización de datos</label>
+        <input type="checkbox" name="val4" value="desafios" class="input-checkbox">
+        <label for="val4" class="etiqueta">Desafíos</label>
+        <input type="checkbox" name="val5" value="comunidad" class="input-checkbox">
+        <label for="val5" class="etiqueta">Comunidad de código abierto</label>
+        <input type="checkbox" name="val6" value="salas" class="input-checkbox">
+        <label for="val6" class="etiqueta">Salas de ayuda Gitter</label>
+        <input type="checkbox" name="val7" value="videos" class="input-checkbox">
+        <label for="val7" class="etiqueta">Videos</label>
+        <input type="checkbox" name="val8" value="encuentros" class="input-checkbox">
+        <label for="val8" class="etiqueta">Encuentros</label>
+        <input type="checkbox" name="val9" value="wiki" class="input-checkbox">
+        <label for="val9" class="etiqueta">Wiki</label>
+        <input type="checkbox" name="val10" value="foros" class="input-checkbox">
+        <label for="val10" class="etiqueta">Foros</label>
+        <input type="checkbox" name="val11" value="cursos" class="input-checkbox">
+        <label for="val11" class="etiqueta">Cursos adicionales</label>
+      </div>
+      <label for="comentario" class="etiqueta">Algún comentario o sugerencia</label>
+      <textarea name="comentario" placeholder="Ingrese su comentario aquí"></textarea>
+      <button type="submit" name="button" id="submit">Enviar</button>
+    </form>
+  </div>
